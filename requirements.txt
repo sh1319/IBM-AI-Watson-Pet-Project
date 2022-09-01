@@ -1,0 +1,13 @@
+ibm_watson
+newscatcherapi
+tweepy
+spotipy
+vlc
+pafy
+gcsa
+random 
+datetime
+beautiful_time
+paho-mqtt
+pymongo
+pymongo[srv]

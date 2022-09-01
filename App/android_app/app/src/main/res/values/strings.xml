@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Watson AI</string>
+    <string-array name="devices">
+    </string-array>
+</resources>

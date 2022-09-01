@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context=".AuthorizationFragment">
+
+    <TextView
+        android:id="@+id/deviceid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Device id : "
+        android:textAlignment="textStart"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/deviceidTv"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/deviceid"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="-8dp"
+        android:layout_toRightOf="@+id/deviceid"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/enterBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/deviceidTv"
+        android:layout_marginLeft="27dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@+id/deviceidTv"
+        android:text="Enter"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/authorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterBtn"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Authorization : "
+        android:textAlignment="textStart"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/accountTv"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/authorization"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:autoLink="web"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/urlTv"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/accountTv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:autoLink="web"
+        android:textIsSelectable="true"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/geturlBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/authorization"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="-8dp"
+        android:layout_toRightOf="@+id/authorization"
+        android:text="Get"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/urlTv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Response : "
+        android:textAlignment="textStart"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/pinTv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/response"
+        android:layout_marginLeft="30dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/authorizeBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/pinTv"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/pinTv"
+        android:layout_marginRight="30dp"
+        android:text="Authorize"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

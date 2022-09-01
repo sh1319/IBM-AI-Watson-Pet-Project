@@ -1,0 +1,8 @@
+random 
+gcsa
+tweepy
+ibm_db
+ibm_watson
+paho-mqtt
+pymongo
+pymongo[srv]

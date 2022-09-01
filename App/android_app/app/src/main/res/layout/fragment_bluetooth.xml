@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?><!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".BluetoothFragment">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="336dp"-->
+<!--        android:text="@string/hello_bluetooth_fragment"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context=".BluetoothFragment">
+
+    <TextView
+        android:id="@+id/statusBluetoothTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/bluetoothIv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/statusBluetoothTv"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/onBth"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bluetoothIv"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/bluetoothIv"
+        android:text="Turn On" />
+
+    <Button
+        android:id="@+id/offBth"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/onBth"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/onBth"
+        android:text="Turn Off" />
+
+    <TextView
+        android:id="@+id/pairedDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offBth"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Paired Devices : "
+        android:textAlignment="textStart"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/devices_spinner"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/pairedDevice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/refreshBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/devices_spinner"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentEnd="true"
+        android:text="Refresh Devices" />
+
+    <TextView
+        android:id="@+id/connectInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refreshBtn"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Connect to Internet"
+        android:textAlignment="textStart"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ssid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connectInternet"
+        android:layout_marginLeft="30dp"
+        android:text="SSID"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/ssidTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ssid"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="text" />
+
+
+    <TextView
+        android:id="@+id/psk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ssidTv"
+        android:layout_marginLeft="30dp"
+        android:text="PSK"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/pskTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/psk"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pskTv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:text="Send" />
+
+    <TextView
+        android:id="@+id/receivedMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendBtn"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:text="Info:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/receivedMsgTv"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/receivedMsg"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:text="" />
+
+
+</RelativeLayout>
