@@ -1,4 +1,15 @@
 # ICL-IBM-AI-Watson-Pet
+ The AI Watson pet is an AI ornament with the characteristics of a pet, designed to target the impact of social isolation for the elderly. The pet will interact with its owner, and perform various actions depending on what the owner wants it to do. This will give the owners the mental health benefits of having a pet, without the responsibility and expenses of actually caring for one. The aim of the project is to create a smart pet with AI technology to interact with its owner successfully.
+
+## Video Link:
+https://drive.google.com/drive/folders/1X8JHZ7TH7rixMnBctJGE3ZhGvCP7YAib?usp=sharing
+
+## Audio MP3 Link:
+https://drive.google.com/drive/folders/1X8JHZ7TH7rixMnBctJGE3ZhGvCP7YAib?usp=sharing
+
+## Trello Project Board Link:
+https://trello.com/invite/b/4JAl3sjE/0ff0876919062a6ea0753fef662f85e3/ai-watson-pet
+
 ## Hardware Part Info
 
 This repo contains all the code required to run your own Watson AI Pet!
